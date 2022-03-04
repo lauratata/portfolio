@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Laura Taormina Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo Laura Taormina">
+    </a>
+    <div class="rightSide">
+        <div class="btns dayNight">
+            <ion-icon name="moon-outline"></ion-icon>
+            <ion-icon name="sunny-outline"></ion-icon>
+        </div>
+        <div class="btns menuToggle">
+            <ion-icon name="menu-outline"></ion-icon>
+            <ion-icon name="close-outline"></ion-icon>
+        </div>
+    </div>
+</header>
+
+<!--Sidebar navigation-->
+<ul class="navigation">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="apropos.html">À propos</a></li>
+    <li><a href="projets.html">Projets</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</ul>
+
+<main class="index">
+    <h1>Je suis <span class="jaune">Laura Taormina</span>. Bienvenue dans mon système.</h1>
+    <div id="scroll-down-animation">
+  <span class="mouse">
+    <span class="move" onclick="scrollTo('.reseaux')"></span>
+  </span>
+        <h2>Scroll down</h2>
+    </div>
+</main>
+
+<section class="reseaux">
+    <a href="https://dribbble.com/laurataormina/">
+        <img src="img/dribbble-logo.svg" alt="Dribbble Laura Taormina">
+    </a>
+    <a href="https://www.linkedin.com/in/laurataormina/">
+        <img src="img/LinkedIn-logo.svg" alt="LinkedIn Laura Taormina">
+    </a>
+    <a href="https://www.behance.net/laurataormina">
+        <img src="img/behance-logo.svg" alt="Behance Laura Taormina">
+    </a>
+</section>
+
+<section class="liens">
+    <div class="link">
+        <a href="apropos.html">
+            <div class="apropos">À propos.</div>
+        </a>
+        <a href="projets.html">
+            <div class="projets">Mes projets.</div>
+        </a>
+    </div>
+
+</section>
+<footer>
+    <h2>Si vous souhaitez discuter, n'hésitez pas à me contacter</h2>
+    <h3><a href="mailto:laura.taormina@gmail.com">laura.taormina@gmail.com</a></h3>
+    <form action="">
+        <section>
+            <input type="text" placeholder="Votre nom">
+            <input type="text" placeholder="Sujet">
+            <input type="text" placeholder="Votre message">
+        </section>
+        <section>
+            <input type="email" placeholder="Entrez votre adresse e-mail">
+            <button class="btnform">
+                <ion-icon name="mail-outline"></ion-icon>
+                Envoyer
+            </button>
+        </section>
+    </form>
+    <div class="reseauxsoc">
+        <a href="https://dribbble.com/laurataormina/">
+            <img src="img/dribbble-fill.svg" alt="Dribbble Laura Taormina">
+        </a>
+        <a href="https://www.linkedin.com/in/laurataormina/">
+            <img src="img/linkedin-fill.svg" alt="LinkedIn Laura Taormina">
+        </a>
+        <a href="https://github.com/lauratata">
+            <img src="img/github.svg" alt="Github Laura Taormina">
+        </a>
+        <a href="https://www.behance.net/laurataormina">
+            <img src="img/behance-fill.svg" alt="Behance Laura Taormina">
+        </a>
+    </div>
+</footer>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="toggle.js"></script>
+</body>
+</html>

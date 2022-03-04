@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Laura Taormina Portfolio - À propos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo Laura Taormina">
+    </a>
+    <div class="rightSide">
+        <div class="btns dayNight">
+            <ion-icon name="moon-outline"></ion-icon>
+            <ion-icon name="sunny-outline"></ion-icon>
+        </div>
+        <div class="btns menuToggle">
+            <ion-icon name="menu-outline"></ion-icon>
+            <ion-icon name="close-outline"></ion-icon>
+        </div>
+    </div>
+</header>
+
+<!--Sidebar navigation-->
+<ul class="navigation">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="apropos.html">À propos</a></li>
+    <li><a href="projets.html">Projets</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</ul>
+
+<main class="page-apropos">
+    <section class="apropos">
+        <div class="title">
+            <h1>À propos de moi</h1>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet assumenda aut beatae dolores doloribus, eos
+            fugit
+            labore nisi repudiandae soluta temporibus unde vitae voluptas. Consequuntur dicta ducimus facere non
+            officiis!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque harum nobis recusandae. Amet assumenda
+            cumque eligendi fugit nemo numquam optio quas ratione repellat ut! At et in nisi sed voluptate!</p>
+    </section>
+    <img src="img/photo.jpeg" alt="">
+    <div id="scroll-down-animation">
+  <span class="mouse">
+    <span class="move" onclick="scrollTo('.services')"></span>
+  </span>
+        <h2>Scroll down</h2>
+    </div>
+</main>
+
+<section class="services">
+    <div class="title">
+        <h1>Mes services</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at blanditiis cum earum enim eum illo illum iure
+            optio unde.</p>
+    </div>
+    <div class="content">
+        <div class="serviceBox">
+            <img src="img/icons8-web-design-64.png" alt="Webdesign">
+            <h2>Web Design</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa dicta exercitationem, explicabo incidunt
+                laboriosam laborum nam non omnis optio.</p>
+        </div>
+        <div class="serviceBox">
+            <img src="img/icons8-coding-64.png" alt="Développement">
+            <h2>Développement Web</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa dicta exercitationem, explicabo incidunt
+                laboriosam laborum nam non omnis optio.</p>
+        </div>
+        <div class="serviceBox">
+            <img src="img/icons8-software-64.png" alt="Graphic Design">
+            <h2>Graphic Design</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa dicta exercitationem, explicabo incidunt
+                laboriosam laborum nam non omnis optio.</p>
+        </div>
+        <div class="serviceBox">
+            <img src="img/icons8-online-communication-64.png" alt="Communication">
+            <h2>Communication</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa dicta exercitationem, explicabo incidunt
+                laboriosam laborum nam non omnis optio.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <h2>Si vous souhaitez discuter, n'hésitez pas à me contacter</h2>
+    <h3><a href="mailto:laura.taormina@gmail.com">laura.taormina@gmail.com</a></h3>
+    <form action="">
+        <section>
+            <input type="text" placeholder="Votre nom">
+            <input type="text" placeholder="Sujet">
+            <input type="text" placeholder="Votre message">
+        </section>
+        <section>
+            <input type="email" placeholder="Entrez votre adresse e-mail">
+            <button class="btnform">
+                <ion-icon name="mail-outline"></ion-icon>
+                Envoyer
+            </button>
+        </section>
+    </form>
+    <div class="reseauxsoc">
+        <a href="#">
+            <img src="img/dribbble-fill.svg" alt="Dribbble Laura Taormina">
+        </a>
+        <a href="#">
+            <img src="img/linkedin-fill.svg" alt="LinkedIn Laura Taormina">
+        </a>
+        <a href="#">
+            <img src="img/github.svg" alt="Github Laura Taormina">
+        </a>
+        <a href="#">
+            <img src="img/behance-fill.svg" alt="Behance Laura Taormina">
+        </a>
+    </div>
+</footer>
+
+<script src="toggle.js"></script>
+
+</body>
+</html>
