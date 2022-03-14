@@ -23,6 +23,7 @@
     --purple: black;
     --black: black;
     --mauve: #181E41;
+    --white: #eaeaea;
 }
 
 header {
@@ -101,24 +102,23 @@ main {
 
 main.index h1 {
     color: var(--white);
-    width: 44ch;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    animation: typing 4s steps(44), blink .5s step-end infinite alternate;
+    /*white-space: nowrap;*/
+    /*overflow: hidden;*/
+    /*border-right: 3px solid;*/
+    /*animation: typing 4s steps(44), blink .5s step-end infinite alternate;*/
 }
 
-@keyframes typing {
-    from {
-        width: 0
-    }
-}
+/*@keyframes typing {*/
+/*    from {*/
+/*        width: 0*/
+/*    }*/
+/*}*/
 
-@keyframes blink {
-    50% {
-        border-color: transparent
-    }
-}
+/*@keyframes blink {*/
+/*    50% {*/
+/*        border-color: transparent*/
+/*    }*/
+/*}*/
 
 .jaune {
     color: var(--jaune);
@@ -282,6 +282,10 @@ footer form, main.contact form {
     font-size: 1.3em;
 }
 
+body > main > form > section:nth-child(2) > input[type=text], body > footer > form > section:nth-child(2) > input[type=text] {
+    height: 13.5em;
+}
+
 footer form section, main.contact form section {
     display: flex;
     flex-direction: column;
@@ -331,7 +335,7 @@ header.contact, main.contact {
     background-color: var(--black);
 }
 
-main.contact {
+main.contact, main.page-projet {
     flex-direction: column;
 }
 
@@ -549,6 +553,10 @@ section.projets h1 {
 
 /*Page a propos*/
 
+.page-apropos {
+    padding: 3em;
+}
+
 .page-apropos img {
     width: 50%;
     margin: 1em;
@@ -651,4 +659,63 @@ section.apropos {
     .page-apropos img {
         width: 75%;
     }
+}
+
+/*Page projet */
+
+.page-projet h1 {
+    margin-top: 3em;
+}
+
+@media (max-width: 600px) {
+    .projet-grille {
+        flex-direction: column;
+    }
+}
+
+.listes {
+    color: var(--white);
+    text-align: left;
+}
+
+.listes h2 {
+    background: var(--white);
+    color: var(--purple);
+    padding: 5px;
+    letter-spacing: 1px;
+    margin-top: 1em;
+}
+
+.listes a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.listes a:hover {
+    color: var(--jaune2);
+}
+
+.listes p {
+    text-align: left;
+}
+
+.projet-grille {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description {
+    width: 50%;
+    margin-left: 2em;
+    color: var(--white);
+}
+
+.description p {
+    text-align: left;
+    text-indent: 1em;
+}
+
+.description p::first-letter {
+    font-size: 2em;
 }
